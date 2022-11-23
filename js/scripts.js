@@ -54,7 +54,7 @@ let clock = () => {
       } else if (period === "PM" && 4 <= hours && hours <= 7) {
         document.getElementById("greeting-message").innerHTML = eveningMessage;
         document.getElementById("greeting-text").innerHTML = eveningText;
-        image.src = "Image/lunch_image@2x.png";
+        image.src = "/Image/lunch_image@2x.png";
       } else {
         document.getElementById("greeting-message").innerHTML = nightMessage;
         document.getElementById("greeting-text").innerHTML = nightText;
