@@ -45,20 +45,20 @@ let clock = () => {
     if (period === "AM" && 1 <= hours && hours <= 12) {
       document.getElementById("greeting-message").innerHTML = morningMessage;
       document.getElementById("greeting-text").innerHTML = morningText;
-      image.src = "/Image/Component 30 – 1.svg";
+      image.src = "./Image/Component 30 – 1.svg";
     } else if (period === "PM") {
       if (period === "PM" && (hours === 12 || (1 <= hours && hours <= 3))) {
         document.getElementById("greeting-message").innerHTML = afternoonMessage;
         document.getElementById("greeting-text").innerHTML = afternoonText;
-        image.src = "/Image/Component 31 – 1.svg";
+        image.src = "./Image/Component 31 – 1.svg";
       } else if (period === "PM" && 4 <= hours && hours <= 7) {
         document.getElementById("greeting-message").innerHTML = eveningMessage;
         document.getElementById("greeting-text").innerHTML = eveningText;
-        image.src = "/Image/lunch_image@2x.png";
+        image.src = "./Image/lunch_image@2x.png";
       } else {
         document.getElementById("greeting-message").innerHTML = nightMessage;
         document.getElementById("greeting-text").innerHTML = nightText;
-        image.src = "/Image/Component 32 – 1.svg";
+        image.src = "./Image/Component 32 – 1.svg";
       }
     }
   };
